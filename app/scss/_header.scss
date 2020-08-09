@@ -1,52 +1,35 @@
-.header {
-  display: flex;
-  justify-content: center;
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 143px auto 190px;
+  grid-template-rows: 103px;
+  grid-gap: 57px;
+  align-items: center;
+  width: 85.65%;
+  min-width: 1170px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header__logo {
   width: 143px;
   height: 23px;
-  margin-right: 4.87%;
   cursor: pointer;
   &:hover {
     opacity: 0.5;
   }
 }
 
-.header__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 85.65%;
-  height: 103px;
-  min-width: 1170px;
-  max-width: 1440px;
-  outline: 1px solid orange;
-}
-
-.header__wrapper {
-  display: flex;
-  width: 82.9%;
-  min-width: 970px;
-  outline: 1px solid green;
-}
-
-.navigation {
-  margin-right: auto;
-}
-
 .navigation__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  justify-content: start;
+  gap: 20px;
   list-style: none;
-}
-
-.navigation__item {
-  margin-right: 20px;
 }
 
 .navigation__link {
   text-decoration: none;
-  color: #122659;
+  color: $textColor;
   &:hover,
   &:focus,{
   opacity: 0.5;
@@ -54,11 +37,23 @@
 }
 
 .header__contact {
-  margin-right: 4px;
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
   text-decoration: none;
-  color: #122659;
+  color: $textColor;
   &:hover,
   &:focus,{
     opacity: 0.5;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/dest/icon-phone.svg");
   }
 }

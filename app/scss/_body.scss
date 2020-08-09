@@ -36,8 +36,14 @@ body {
   margin: 0;
   word-wrap: normal;
   min-width: 320px;
-  color: #122659;
+  color: $textColor;
   background-color: #fdfcfa;
+}
+
+h2 {
+  font-family: "Rubik", "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
 }
 
 a:focus {

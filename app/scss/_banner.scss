@@ -1,0 +1,59 @@
+.banner {
+  display: grid;
+  align-items: center;
+  height: 453px;
+  background-image: url('../images/dest/back-banner-desctop.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.banner__wrapper {
+  position: relative;
+  width: 71.44%;
+  min-width: 976px;
+  max-width: 1440px;
+  margin: 0 auto;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 120px;
+    width: 175px;
+    height: 145px;
+    background-image: url('../images/dest/rainbow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 170px;
+    width: 118px;
+    height: 133px;
+    background-image: url('../images/dest/boy.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.banner__title {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  line-height: 45px;
+  text-align: center;
+  color: #FEFCFA;
+}
+
+.banner__description {
+  width: 360px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  text-align: center;
+  color: #FEFCFA;
+}
+
+.banner__button {
+  margin: 0 auto;
+}
