@@ -1,0 +1,91 @@
+.teachers {
+  display: grid;
+  min-height: 714px;
+}
+
+.teachers__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  grid-template-rows: 58px 1fr 30px;
+  width: 970px;
+  margin: auto;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -140px;
+    width: 44px;
+    height: 132px;
+    background-image: url('../images/dest/pencil.svg');
+    background-repeat: no-repeat;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -100px;
+    width: 58px;
+    height: 97px;
+    background-image: url('../images/dest/house.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.teachers__description {
+  width: 350px;
+  margin-left: auto;
+}
+
+.slider {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  grid-column-gap: 30px;
+  list-style: none;
+  margin-top: 54px;
+  margin-bottom: 47px;
+}
+
+.teachers__photo {
+  border-radius: 13px;
+  margin-bottom: 16px;
+}
+
+.teachers__name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.teachers__country {
+  color: #677085;
+  text-align: center;
+}
+
+.slider__buttons {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.slider__button {
+  width: 17px;
+  height: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url('../images/dest/icon-arrow-left.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__button--left {
+  margin-left: auto;
+}
+
+.slider__button--right {
+  transform: rotate(180deg);
+}

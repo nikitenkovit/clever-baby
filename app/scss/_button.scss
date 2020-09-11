@@ -1,0 +1,18 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 166px;
+  height: 50px;
+  text-decoration: none;
+  color: $textColor;
+  font-weight: 500;
+  border-radius: 35px;
+  background-color: $secondGroupColor;
+  cursor: pointer;
+
+  &:hover,
+  &:focus, {
+    opacity: 0.5;
+  }
+}

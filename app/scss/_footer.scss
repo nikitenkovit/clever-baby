@@ -1,0 +1,13 @@
+.page__footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+  height: 114px;
+  padding: 0 45px;
+}
+
+.page__footer__link {
+  text-decoration: none;
+  color: $textColor;
+}

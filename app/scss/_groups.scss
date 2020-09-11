@@ -1,0 +1,106 @@
+.groups {
+  display: grid;
+  min-height: 803px;
+  margin-top: 130px;
+  background-image: url('../images/dest/groups-back.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.groups__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 58px 1fr;
+  grid-column-gap: 41px;
+  grid-row-gap: 54px;
+  width: 71.44%;
+  min-width: 976px;
+  max-width: 1440px;
+  margin: auto;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: -70px;
+    width: 56px;
+    height: 58px;
+    background-image: url('../images/dest/star.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.groups__description {
+  grid-column: 3 / 4;
+}
+
+.groups__list {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 41px;
+  list-style: none;
+}
+
+.groups__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 321px;
+  border: 3px solid $firstGroupColor;
+  box-sizing: border-box;
+  border-radius: 12px;
+  text-align: center;
+  & .groups__button {
+    background-color: $firstGroupColor;
+  }
+}
+
+.second-group {
+  border-color: $secondGroupColor;
+  & .groups__button {
+    background-color: $secondGroupColor;
+  }
+}
+
+.third-group {
+  border-color: $thirdGroupColor;
+  & .groups__button {
+    background-color: $thirdGroupColor;
+  }
+}
+
+.groups__subtitle {
+  margin-top: 46px;
+  margin-bottom: 33px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.groups__condition {
+  margin-bottom: 14px;
+}
+
+.groups__price {
+  margin-bottom: 37px;
+  & span {
+    font-weight: 500;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
