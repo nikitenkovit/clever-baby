@@ -71,11 +71,11 @@ img {
   overflow: hidden;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-}
-
-body, ul, li, h1, h2, h3, p, button, section, nav, header, footer, main, img, input, label, form, strong, b, span, a, strong {
   margin: 0;
   padding: 0;
 }
+
