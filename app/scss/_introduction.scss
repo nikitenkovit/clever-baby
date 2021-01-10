@@ -10,70 +10,70 @@
     background-image: url('../images/dest/mask-table.svg'), url('../images/dest/main-photo-768@2x.jpg');
     background-position: 0 100%, center;
   }
+}
 
-  .introduction__wrapper {
-    position: relative;
-    width: 71.01%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-top: 121px;
+.introduction__wrapper {
+  position: relative;
+  width: 71.01%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 121px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 37px;
+    left: -130px;
+    width: 106px;
+    height: 84px;
+    background-image: url("../images/dest/car.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    right: -115px;
+    width: 91px;
+    height: 62px;
+    background-image: url("../images/dest/cloud.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: $tabletSize) {
+    width: 88.2%;
+    max-width: none;
+    padding-top: 77px;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 37px;
-      left: -130px;
-      width: 106px;
-      height: 84px;
-      background-image: url("../images/dest/car.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
+      top: 31px;
+      left: -35px;
+      width: 58px;
+      height: 46px;
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      top: 65px;
-      right: -115px;
-      width: 91px;
-      height: 62px;
-      background-image: url("../images/dest/cloud.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    @media (max-width: $tabletSize) {
-      width: 88.2%;
-      max-width: none;
-      padding-top: 77px;
-
-      &::before {
-        top: 31px;
-        left: -35px;
-        width: 58px;
-        height: 46px;
-      }
-
-      &::after {
-        display: none;
-      }
+      display: none;
     }
   }
+}
 
-  .introduction__title {
-    font-size: 42px;
-  }
+.introduction__title {
+  font-size: 42px;
+}
 
-  .introduction__subtitle {
-    margin-bottom: 25px;
-    font-family: "Rubik", "Montserrat", "Arial", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-  }
+.introduction__subtitle {
+  margin-bottom: 25px;
+  font-family: "Rubik", "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
 
-  .introduction__description {
-    width: 375px;
-    margin-bottom: 45px;
-  }
+.introduction__description {
+  width: 375px;
+  margin-bottom: 45px;
 }
