@@ -15,4 +15,10 @@
   &:focus, {
     opacity: 0.5;
   }
+
+  @media (max-width: $mobileSie) {
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+  }
 }

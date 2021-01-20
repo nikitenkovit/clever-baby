@@ -14,11 +14,24 @@
   background-color: #F7FAFC;
   box-shadow: 0 4px 40px rgba(217, 217, 217, 0.3);
   z-index: 1;
+
+  @media (max-width: $tabletSize) {
+    position: static;
+    width: auto;
+    height: 468px;
+    margin-top: 110px;
+    border-radius: 12px 12px 0 0;
+    box-shadow: none;
+  }
 }
 
 .contacts__wrapper {
   height: 100%;
   padding: 60px 65px 70px 70px;
+
+  @media (max-width: $tabletSize) {
+    padding: 60px 65px 0 42px;
+  }
 }
 
 .contacts__title {
@@ -37,6 +50,18 @@
 
 .contacts__list {
   list-style: none;
+
+  @media (max-width: $tabletSize) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contacts__item-tel {
+  @media (max-width: $tabletSize) {
+    grid-column: -1 / -2;
+    grid-row: 1 / 2;
+  }
 }
 
 .contacts__description {

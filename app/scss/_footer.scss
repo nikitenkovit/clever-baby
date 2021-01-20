@@ -5,6 +5,10 @@
   justify-content: space-between;
   height: 114px;
   padding: 0 45px;
+
+  @media (max-width: $tabletSize) {
+    height: 92px;
+  }
 }
 
 .page__footer__link {

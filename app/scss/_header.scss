@@ -3,6 +3,10 @@
   @media (max-width: $tabletSize) {
     padding: 0 45px;
   }
+
+  @media (max-width: $mobileSie) {
+    padding: 0 15px;
+  }
 }
 
 .header__wrapper {
@@ -27,6 +31,11 @@
     margin: 0;
     overflow: hidden;
   }
+
+  @media (max-width: $mobileSie) {
+    grid-template-rows: 77px auto auto;
+    grid-column-gap: 15px;
+  }
 }
 
 .header__button {
@@ -37,7 +46,6 @@
     position: relative;
     width: 24px;
     height: 12px;
-    margin-right: 25px;
     border: none;
     outline: none;
     background-color: transparent;
@@ -103,6 +111,11 @@
   @media (max-width: $tabletSize) {
     width: 132px;
     height: 21px;
+  }
+
+  @media (max-width: $mobileSie) {
+    width: 111px;
+    height: 17px;
   }
 }
 
@@ -173,6 +186,19 @@
     font-style: normal;
 
     &--open {
+      grid-row-start: 3;
+      width: 200px;
+      margin-left: 25px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: $mobileSie) {
+    display: none;
+
+    &--open {
+      display: block;
       grid-row-start: 3;
       width: 200px;
       margin-left: 25px;

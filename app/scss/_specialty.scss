@@ -7,6 +7,7 @@
 
   @media (max-width: $tabletSize) {
     width: 88.28%;
+    max-width: none;
     margin-top: 131px;
   }
 }
@@ -141,6 +142,7 @@
   line-height: 28px;
 
   @media (max-width: $tabletSize) {
+    width: auto;
     font-size: 18px;
   }
 }

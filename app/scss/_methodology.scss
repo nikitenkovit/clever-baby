@@ -48,6 +48,7 @@
     grid-template-columns: 1fr 354px;
     column-gap: 41px;
     width: 88.28%;
+    max-width: none;
     justify-content: space-between;
 
     &::before {

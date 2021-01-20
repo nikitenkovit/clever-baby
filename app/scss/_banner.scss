@@ -5,6 +5,11 @@
   background-image: url('../images/dest/back-banner-desctop.svg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
+  @media (max-width: $tabletSize) {
+    height: 450px;
+    background-image: url('../images/dest/back-banner-768.png');
+  }
 }
 
 .banner__wrapper {
@@ -13,6 +18,7 @@
   min-width: 976px;
   max-width: 1440px;
   margin: 0 auto;
+
   &::before {
     content: "";
     position: absolute;
@@ -24,6 +30,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -34,6 +41,27 @@
     background-image: url('../images/dest/boy.svg');
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (max-width: $tabletSize) {
+    width: 490px;
+    min-width: auto;
+    max-width: none;
+
+    &::before {
+      top: 82px;
+      left: -128px;
+      width: 121px;
+      height: 104px;
+      background-image: url('../images/dest/rainbow-768.png');
+    }
+  }
+
+  &::after {
+    right: -85px;
+    width: 78px;
+    height: 89px;
+    background-image: url('../images/dest/boy-768.png');
   }
 }
 
@@ -56,4 +84,10 @@
 
 .banner__button {
   margin: 0 auto;
+
+  @media (max-width: $tabletSize) {
+    width: 152px;
+    height: 44px;
+    font-size: 16px;
+  }
 }

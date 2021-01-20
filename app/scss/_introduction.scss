@@ -10,6 +10,14 @@
     background-image: url('../images/dest/mask-table.svg'), url('../images/dest/main-photo-768@2x.jpg');
     background-position: 0 100%, center;
   }
+
+  @media (max-width: $mobileSie) {
+    height: 304px;
+    background-image: url('../images/dest/main-photo-320.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .introduction__wrapper {
@@ -59,10 +67,28 @@
       display: none;
     }
   }
+
+  @media (max-width: $mobileSie) {
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 51px;
+
+    &::before {
+      top: 12px;
+      left: 2px;
+      width: 48px;
+      height: 38px;
+    }
+  }
 }
 
 .introduction__title {
   font-size: 42px;
+
+  @media (max-width: $mobileSie) {
+    font-size: 28px;
+    line-height: 140%;
+  }
 }
 
 .introduction__subtitle {
@@ -71,9 +97,22 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
+
+  @media (max-width: $mobileSie) {
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 
 .introduction__description {
   width: 375px;
   margin-bottom: 45px;
+
+  @media (max-width: $mobileSie) {
+    width: 224px;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 25px;
+  }
 }
