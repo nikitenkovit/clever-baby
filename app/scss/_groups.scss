@@ -12,6 +12,14 @@
     min-height: 614px;
     background-image: url('../images/dest/groups-back-768.png');
   }
+
+  @media (max-width: $mobileSie) {
+    display: block;
+    min-height: auto;
+    margin-top: 60px;
+    background-image: none;
+    background-color: #F7FAFC;
+  }
 }
 
 .groups__wrapper {
@@ -50,10 +58,30 @@
       height: 40px;
     }
   }
+
+  @media (max-width: $mobileSie) {
+    display: block;
+    width: 290px;
+    margin: 0 auto;
+    padding-top: 57px;
+
+    &::before {
+      top: 0;
+      left: -15px;
+      width: 39px;
+      height: 40px;
+    }
+  }
 }
 
 .groups__title {
   width: 237px;
+
+  @media (max-width: $mobileSie) {
+    width: auto;
+    font-size: 22px;
+    margin-bottom: 27px;
+  }
 }
 
 .groups__description {
@@ -61,6 +89,10 @@
 
   @media (max-width: $tabletSize) {
     font-size: 14px;
+  }
+
+  @media (max-width: $mobileSie) {
+    margin-bottom: 37px;
   }
 }
 
@@ -73,6 +105,11 @@
 
   @media (max-width: $tabletSize) {
     grid-column-gap: 30px;
+  }
+
+  @media (max-width: $mobileSie) {
+    display: block;
+    padding-bottom: 60px;
   }
 }
 
@@ -91,6 +128,15 @@
 
   @media (max-width: $tabletSize) {
     height: 295px;
+  }
+
+  @media (max-width: $mobileSie) {
+    width: 100%;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -132,6 +178,14 @@
   & span {
     font-weight: 500;
   }
+
+  @media (max-width: $mobileSie) {
+    font-size: 16px;
+
+    span {
+      font-size: 20px;
+    }
+  }
 }
 
 .groups__button {
@@ -139,20 +193,9 @@
   @media (max-width: $tabletSize) {
     height: 44px;
   }
+
+  @media (max-width: $mobileSie) {
+    width: 152px;
+    font-size: 16px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

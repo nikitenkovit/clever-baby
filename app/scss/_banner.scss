@@ -9,6 +9,13 @@
   @media (max-width: $tabletSize) {
     height: 450px;
     background-image: url('../images/dest/back-banner-768.png');
+    background-size: 100%;
+  }
+
+  @media (max-width: $mobileSie) {
+    display: block;
+    height: 384px;
+    background-image: url('../images/dest/back-banner-320.png');
   }
 }
 
@@ -63,6 +70,19 @@
     height: 89px;
     background-image: url('../images/dest/boy-768.png');
   }
+
+  @media (max-width: $mobileSie) {
+    width: 290px;
+    padding-top: 67px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .banner__title {
@@ -72,6 +92,21 @@
   line-height: 45px;
   text-align: center;
   color: #FEFCFA;
+
+  br {
+    display: none;
+  }
+
+  @media (max-width: $mobileSie) {
+    width: 187px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 125%;
+
+    br {
+      display: block;
+    }
+  }
 }
 
 .banner__description {
@@ -80,6 +115,13 @@
   margin-bottom: 36px;
   text-align: center;
   color: #FEFCFA;
+
+  @media (max-width: $mobileSie) {
+    width: 240px;
+    font-size: 14px;
+    line-height: 145%;
+    margin-bottom: 25px;
+  }
 }
 
 .banner__button {

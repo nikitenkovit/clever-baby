@@ -14,4 +14,8 @@
   @media (max-width: $tabletSize) {
     height: 438px;
   }
+
+  @media (max-width: $mobileSie) {
+    height: 261px;
+  }
 }

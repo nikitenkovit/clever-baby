@@ -10,6 +10,11 @@
     max-width: none;
     margin-top: 131px;
   }
+
+  @media (max-width: $mobileSie) {
+    width: 290px;
+    margin-top: 60px;
+  }
 }
 
 .specialty__list {
@@ -19,6 +24,10 @@
 
   @media (max-width: $tabletSize) {
     grid-template-columns: 1fr minmax(180px, 1fr) 1fr;
+  }
+
+  @media (max-width: $mobileSie) {
+    display: block;
   }
 }
 
@@ -57,6 +66,21 @@
       background: url('../images/dest/arrow-top-left-768.png') no-repeat center;
     }
   }
+
+  @media (max-width: $mobileSie) {
+    margin-bottom: 35px;
+    padding-top: 0;
+
+    &::before {
+      top: auto;
+      bottom: -180px;
+      right: auto;
+      left: 0;
+      width: 66px;
+      height: 174px;
+      background: url('../images/dest/arrow-top-left-320.png') no-repeat center;
+    }
+  }
 }
 
 .specialty__item-top-right {
@@ -78,6 +102,20 @@
       width: 64px;
       height: 49px;
       background: url('../images/dest/arrow-top-right-768.png') no-repeat center;
+    }
+  }
+
+  @media (max-width: $mobileSie) {
+    margin-left: 75px;
+
+    &::before {
+      top: auto;
+      bottom: -80px;
+      left: auto;
+      right: 15px;
+      width: 46px;
+      height: 80px;
+      background: url('../images/dest/arrow-top-right-320.png') no-repeat center;
     }
   }
 }
@@ -106,6 +144,21 @@
       height: 90px;
     }
   }
+
+  @media (max-width: $mobileSie) {
+    position: relative;
+    width: 257px;
+    padding-top: 255px;
+
+    &::before {
+      top: 180px;
+      right: auto;
+      left: 10px;
+      width: 57px;
+      height: 72px;
+      background: url('../images/dest/arrow-bottom-left-320.png') no-repeat center;
+    }
+  }
 }
 
 .specialty__item-bottom-right {
@@ -132,6 +185,21 @@
       background: url('../images/dest/arrow-bottom-right-768.png') no-repeat center;
     }
   }
+
+  @media (max-width: $mobileSie) {
+    margin-left: 75px;
+    padding-top: 20px;
+
+    &::before {
+      bottom: auto;
+      top: -195px;
+      left: auto;
+      right: -5px;
+      width: 71px;
+      height: 200px;
+      background: url('../images/dest/arrow-bottom-right-320.png') no-repeat center;
+    }
+  }
 }
 
 .specialty__subtitle {
@@ -144,6 +212,10 @@
   @media (max-width: $tabletSize) {
     width: auto;
     font-size: 18px;
+  }
+
+  @media (max-width: $mobileSie) {
+    font-size: 16px;
   }
 }
 
@@ -161,6 +233,12 @@
   .specialty__description {
     width: 300px;
   }
+
+  @media (max-width: $mobileSie) {
+    .specialty__description {
+      width: 257px;
+    }
+  }
 }
 
 .specialty__img {
@@ -175,5 +253,13 @@
     top: 36px;
     width: 255px;
     height: 257px;
+  }
+
+  @media (max-width: $mobileSie) {
+    top: 265px;
+    width: 184px;
+    height: 210px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

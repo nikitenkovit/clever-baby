@@ -8,6 +8,11 @@
     margin-top: 110px;
     line-height: 70%;
   }
+
+  @media (max-width: $mobileSie) {
+    margin-top: 60px;
+    font-size: 22px;
+  }
 }
 
 .methodology__wrapper {
@@ -62,6 +67,19 @@
       height: 50px;
     }
   }
+
+  @media (max-width: $mobileSie) {
+    display: block;
+    width: 290px;
+
+    &::after {
+      top: -120px;
+      right: 0;
+      width: 67px;
+      height: 34px;
+      background-image: url('../images/dest/rocket-320.png');
+    }
+  }
 }
 
 .methodology-text-block {
@@ -69,6 +87,11 @@
 
   @media (max-width: $tabletSize) {
     grid-column: auto;
+
+    .methodology__subtitle {
+      font-size: 16px;
+      line-height: 140%;
+    }
   }
 }
 
@@ -80,6 +103,17 @@
 
     .methodology__subtitle {
       width: 250px;
+      line-height: 140%;
+    }
+  }
+
+  @media (max-width: $mobileSie) {
+    width: 100%;
+    margin-top: 30px;
+
+    .methodology__subtitle {
+      width: 100%;
+      font-size: 16px;
     }
   }
 }

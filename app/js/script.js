@@ -17,16 +17,4 @@
     showOrHiddenNavigation();
     moveDownHeaderContact();
   });
-
-
-
-
-
-
-
-
-
-
-
 })()
-

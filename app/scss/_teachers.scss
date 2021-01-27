@@ -6,6 +6,11 @@
   @media (max-width: $tabletSize) {
     min-height: 650px;
   }
+
+  @media (max-width: $mobileSie) {
+    display: block;
+    min-height: auto;
+  }
 }
 
 .teachers__wrapper {
@@ -39,6 +44,7 @@
 
   @media (max-width: $tabletSize) {
     width: 678px;
+    margin: 0 auto;
 
     &::before {
       display: none;
@@ -48,6 +54,30 @@
       display: none;
 
     }
+  }
+
+  @media (max-width: $mobileSie) {
+    display: block;
+    width: 290px;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: 0;
+      width: 30px;
+      height: 48px;
+      background-image: url('../images/dest/house-320.png');
+    }
+  }
+}
+
+.teachers__title {
+  @media (max-width: $mobileSie) {
+    margin-top: 55px;
+    margin-bottom: 27px;
+    font-size: 22px;
   }
 }
 
@@ -60,12 +90,21 @@
     font-size: 14px;
     line-height: 145%;
   }
+
+  @media (max-width: $mobileSie) {
+    width: 263px;
+    margin: 0;
+  }
 }
 
 .slider {
   grid-column: 1 / -1;
   overflow-x: hidden;
   margin-top: 54px;
+
+  @media (max-width: $mobileSie) {
+    margin-top: 35px;
+  }
 }
 
 .teachers__list {
@@ -85,11 +124,19 @@
   @media (max-width: $tabletSize) {
     min-width: 206px;
   }
+
+  @media (max-width: $mobileSie) {
+    position: relative;
+    min-width: 290px;
+  }
 }
 
 .teachers__photo {
   border-radius: 13px;
   margin-bottom: 16px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .teachers__name {
@@ -117,6 +164,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+
+  @media (max-width: $mobileSie) {
+    position: absolute;
+    bottom: 65px;
+    width: 290px;
+    gap: 0;
+  }
 }
 
 .slider__button {
@@ -138,9 +192,11 @@
 }
 
 .slider__button--left {
-  margin-left: auto;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .slider__button--right {
   transform: rotate(180deg);
+  margin-left: auto;
 }
