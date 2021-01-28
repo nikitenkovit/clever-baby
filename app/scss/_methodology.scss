@@ -70,7 +70,6 @@
 
   @media (max-width: $mobileSie) {
     display: block;
-    width: 290px;
 
     &::after {
       top: -120px;
@@ -108,25 +107,14 @@
   }
 
   @media (max-width: $mobileSie) {
-    width: 100%;
+    width: 290px;
+    margin: 0 auto;
     margin-top: 30px;
 
     .methodology__subtitle {
       width: 100%;
       font-size: 16px;
     }
-  }
-}
-
-.methodology__video {
-  height: 231px;
-  background-image: url("../images/dest/video@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-
-  @media (max-width: $tabletSize) {
-    height: 262px;
   }
 }
 
@@ -151,5 +139,111 @@
     width: auto;
     font-size: 14px;
     line-height: 145%;
+  }
+}
+
+.methodology__video {
+  position: relative;
+  height: 231px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+}
+
+.methodology__video img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  z-index: 2;
+  border-radius: 12px;
+}
+
+.process__video--start-js img {
+  display: none;
+}
+
+.process__video-player {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  height: 231px;
+  background: transparent;
+  z-index: 0;
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  .methodology__video video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.process__video-button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  width: 51px;
+  height: 51px;
+  position: absolute;
+  top: calc(50% - 26px);
+  left: calc(50% - 26px);
+  border-radius: 50%;
+  outline: none;
+  background-image: url("../images/dest/decorate-icon-play.svg");
+  z-index: 2;
+}
+
+.process__video--start-js .process__video-button {
+  display: none;
+}
+
+.process__video-button:hover,
+.process__video-button:focus,
+.process__video-button:active {
+  opacity: 0.5;
+}
+
+@media (max-width: $tabletSize) {
+  .methodology__video {
+    height: 262px;
+  }
+
+  .process__video-player {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: $mobileSie) {
+  .process__subtitle--video {
+    width: 80%;
+    margin-bottom: 19px;
+  }
+
+  .process_video-block {
+    width: 100%;
+    min-width: 290px;
+  }
+  .process__video {
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
+    height: 262px;
+  }
+  .process__video-player {
+    width: 290px;
+    height: 262px;
   }
 }

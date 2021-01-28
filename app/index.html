@@ -10,6 +10,7 @@
 	<title>Clever Baby</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </head>
 
 <body>
@@ -66,7 +67,16 @@
 			<article class="methodology__video-block">
 				<h3 class="methodology__subtitle">Посмотрите, как проходят наши занятия</h3>
 				<div class="methodology__video video">
-					<button class="video__button"></button>
+					<picture>
+						<source type="image/webp" data-srcset="images/dest/video-desktop@1x.webp 1x, images/dest/video-desktop@2x.webp 2x"
+										srcset="images/dest/video-desktop@1x.webp 1x, images/dest/video-desktop@2x.webp 2x">
+						<source type="image/png" data-srcset="img/video-desktop@1x.png 1x img/video-desktop@2x.png 2x"
+										srcset="images/dest/teacher-1@1x.jpg 1x images/dest/teacher-1@2x.jpg 2x">
+						<img class="video__img" src="images/dest/video-desktop@1x.png" data-src="video-desktop@1x.png" alt="На картинке играющий малыш">
+					</picture>
+					<video class="process__video-player" id="video" src="video/sample.mp4" poster="images/dest/video-desktop.png" preload="metadata" controls=""></video>
+					<button type="button" id="video-button" class="process__video-button" aria-label="Запустить видео">
+					</button>
 				</div>
 			</article>
 		</div>
@@ -306,8 +316,7 @@
 		</article>
 		<article class="contacts__map map">
 			<h2 class="visually-hidden">Карта с нашим местоположением</h2>
-			<div class="map__wrapper">
-					<iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CCUIjIFuDD"></iframe>
+			<div id="map" class="map__wrapper">
 			</div>
 		</article>
 	</section>

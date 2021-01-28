@@ -6,16 +6,19 @@
   }
 }
 
-.map__iframe {
+.map__wrapper--js {
   width: 100%;
   height: 611px;
-  border: none;
+}
 
-  @media (max-width: $tabletSize) {
+@media (max-width: $tabletSize) {
+  .map__wrapper--js {
     height: 438px;
   }
+}
 
-  @media (max-width: $mobileSie) {
+@media (max-width: $mobileSie) {
+  .map__wrapper--js {
     height: 261px;
   }
 }

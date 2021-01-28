@@ -70,6 +70,7 @@
 
   @media (max-width: $mobileSie) {
     width: 100%;
+    //width: 84.37%;
     padding-left: 25px;
     padding-top: 51px;
 
@@ -110,7 +111,8 @@
   margin-bottom: 45px;
 
   @media (max-width: $mobileSie) {
-    width: 224px;
+    //width: 224px;
+    width: 80%;
     font-size: 14px;
     line-height: 140%;
     margin-bottom: 25px;
