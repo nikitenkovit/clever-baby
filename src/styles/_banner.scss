@@ -1,0 +1,135 @@
+.banner {
+  display: grid;
+  align-items: center;
+  height: 453px;
+  background-image: url('./images/back-banner-desctop.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (max-width: $tabletSize) {
+    height: 450px;
+    background-image: url('./images/back-banner-768.png');
+    background-size: 100%;
+  }
+
+  @media (max-width: $mobileSie) {
+    display: block;
+    height: 384px;
+    background-image: url('./images/back-banner-320.png');
+  }
+}
+
+.banner__wrapper {
+  position: relative;
+  width: 71.44%;
+  min-width: 976px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 175px;
+    height: 145px;
+    background-image: url('./images/rainbow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    width: 118px;
+    height: 133px;
+    background-image: url('./images/boy.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (max-width: $tabletSize) {
+    width: 490px;
+    min-width: auto;
+    max-width: none;
+
+    &::before {
+      top: 82px;
+      left: -128px;
+      width: 121px;
+      height: 104px;
+      background-image: url('./images/rainbow-768.png');
+    }
+  }
+
+  &::after {
+    right: -85px;
+    width: 78px;
+    height: 89px;
+    background-image: url('./images/boy-768.png');
+  }
+
+  @media (max-width: $mobileSie) {
+    width: 290px;
+    padding-top: 67px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.banner__title {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  line-height: 45px;
+  text-align: center;
+  color: #FEFCFA;
+
+  br {
+    display: none;
+  }
+
+  @media (max-width: $mobileSie) {
+    width: 187px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 125%;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+.banner__description {
+  width: 360px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  text-align: center;
+  color: #FEFCFA;
+
+  @media (max-width: $mobileSie) {
+    width: 240px;
+    font-size: 14px;
+    line-height: 145%;
+    margin-bottom: 25px;
+  }
+}
+
+.banner__button {
+  margin: 0 auto;
+
+  @media (max-width: $tabletSize) {
+    width: 152px;
+    height: 44px;
+    font-size: 16px;
+  }
+}

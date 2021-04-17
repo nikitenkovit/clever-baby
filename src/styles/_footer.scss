@@ -1,0 +1,31 @@
+.page__footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+  height: 114px;
+  padding: 0 45px;
+
+  @media (max-width: $tabletSize) {
+    height: 92px;
+  }
+
+  @media (max-width: $mobileSie) {
+    display: block;
+    height: 118px;
+    padding: 0;
+    padding-left: 15px;
+    padding-top: 37px;
+    align-items: start;
+    font-size: 12px;
+
+    p {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.page__footer__link {
+  text-decoration: none;
+  color: $textColor;
+}
